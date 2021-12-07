@@ -142,7 +142,7 @@ svg path
     animation-delay: 7.5s;
 }
 
-@media (orientation: portrait)
+@media screen and (orientation: portrait)
 {
     h3
     {
@@ -225,7 +225,7 @@ svg path
     box-shadow: 5px 5px 5px 0.2px;
 }
 
-@media (orientation: portrait)
+@media screen and (orientation: portrait)
 {
     .box
     {
