@@ -49,26 +49,6 @@ h3
     font-size: 25px;
 }
 
-.check-box
-{
-    width: 50px;
-    height: 50px;
-    border-radius: 20px;
-    box-shadow: 0px 0px 12px -2px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    opacity: 0;
-}
-
-.check-box svg
-{
-    width: 20px;
-    margin: 20px;
-    margin-top: 15px;
-    margin-left: 15px;
-}
-
 svg path
 {
     stroke-width: 7px;
@@ -76,31 +56,6 @@ svg path
     stroke-dasharray: 35;
     stroke-dashoffset: 50;
     stroke-linecap: round;
-}
-
-.starter .active
-{
-    background-color: deeppink;
-    transition: 1s;
-}
-
-.active .check-box
-{
-    opacity: 1;
-    transition: 1s;
-}
-
-.active p
-{
-    margin-right: 10px;
-    transition: 1.5s;
-    margin-top: 15px;
-}
-
-.active svg path
-{
-    stroke-dashoffset: 0;
-    
 }
 
 .lights img
@@ -187,6 +142,19 @@ svg path
     animation-delay: 7.5s;
 }
 
+@media (orientation: portrait)
+{
+    h3
+    {
+        font-size: 20px;
+    }
+    
+    .top-part
+    {
+        min-height: 70vh;
+    }
+    
+}
 /*--- start of second page ---*/
 
 
@@ -257,7 +225,24 @@ svg path
     box-shadow: 5px 5px 5px 0.2px;
 }
 
-
+@media (orientation: portrait)
+{
+    .box
+    {
+        padding: 20px 40px;
+    }
+    
+    .boxTxt
+    {
+        font-size: 20px;
+    }
+    
+    .container
+    {
+        height: 65vh;
+    }
+    
+}
 /*---- start of third page ----*/
 
 
@@ -372,6 +357,7 @@ svg path
     background: #57feff;
     position: relative;
     animation: moving 3s;
+    animation-delay: 2.5s;
 }
 
 .percent::before
@@ -591,7 +577,7 @@ svg path
 .details
 {
     width: 50%;
-    height: 70%;
+    height: 80%;
     background: #1b1b1b;
     box-shadow: 0px 0px 10px 0px, -0px -0px 10px 0px;
     padding: 0 20px;
@@ -623,9 +609,14 @@ svg path
     transition: 0.5s;
 }
 
-.insta
+@media screen and (orientation: portrait)
 {
-
+    .details
+    {
+        width: 70%;
+        height: 80%;
+        transform: translate(5%);
+    }
 }
 
 /*----- load page -----*/
@@ -638,4 +629,5 @@ svg path
     position: fixed;
     z-index: 100;
     background-size: 10%;
+    transition: opacity 1s ease-out;
 }
