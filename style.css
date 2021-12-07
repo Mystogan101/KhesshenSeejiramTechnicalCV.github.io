@@ -142,7 +142,7 @@ svg path
     animation-delay: 7.5s;
 }
 
-@media screen and (orientation: portrait)
+@media screen and (max-width: 1080px)
 {
     h3
     {
