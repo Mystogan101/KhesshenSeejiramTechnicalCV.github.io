@@ -22,13 +22,18 @@
             <script>
                 var load = document.getElementById("loadPage");
                 
+                window.addEventListener("load", loadAnmation()); 
+                
                 function loadAnmation()
                 {
-                    load.style.display="none";
+                    setTimeout(() =>
+                    {
+                        load.style.display = "none";
+                    },2000);
                 }
-                
-                window.addEventListener(load, loadAnmation()); 
             </script>
+            
+            
         </div>
 <!-------------------------------------- start of first page ---------------------------------->
            <section class="top-part">
