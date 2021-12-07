@@ -1,0 +1,641 @@
+/*---- start of first page ----*/
+*
+{
+    font-family: 'Nunito', sans-serif;
+}
+
+.top-part
+{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(10,5,10,0.5),rgba(10,5,10,0.5)),url(images/background.jpg);
+    background-position:center;
+    background-size: cover;
+    position: relative;
+}
+
+.starter
+{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left 50%;
+    transform: translate(7%, -50%);
+    text-align: center;
+    color: white;
+    justify-content: center;
+}
+
+.starter p
+{
+    font-size: 17px;
+    margin-top: 15px;
+}
+.starter img
+{
+    height: 400px;
+    width: 400px;
+}
+
+h1
+{
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 50px;
+}
+
+h3
+{
+    font-family: 'Fuzzy Bubbles', cursive;
+    font-size: 25px;
+}
+
+.check-box
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 12px -2px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+}
+
+.check-box svg
+{
+    width: 20px;
+    margin: 20px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+svg path
+{
+    stroke-width: 7px;
+    stroke: white;
+    stroke-dasharray: 35;
+    stroke-dashoffset: 50;
+    stroke-linecap: round;
+}
+
+.starter .active
+{
+    background-color: deeppink;
+    transition: 1s;
+}
+
+.active .check-box
+{
+    opacity: 1;
+    transition: 1s;
+}
+
+.active p
+{
+    margin-right: 10px;
+    transition: 1.5s;
+    margin-top: 15px;
+}
+
+.active svg path
+{
+    stroke-dashoffset: 0;
+    
+}
+
+.lights img
+{
+    width: 50px;
+    height: 50px;
+    animation: lights 5s linear infinite;
+}
+
+.lights
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    top: -50px;
+    align-items: center;
+    position: absolute;
+}
+
+@keyframes lights
+{
+    0%
+    {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    25%
+    {
+        opacity: 0.5;
+    }
+    50%
+    {
+        opacity: 1;
+    }
+    75%
+    {
+        opacity: 0.5;
+    }
+    100%
+    {
+        transform: translateY(80vh);
+        opacity: 0;
+    }
+}
+
+.lights img:nth-child(1)
+{
+    animation-delay: 1s;
+}
+.lights img:nth-child(2)
+{
+    animation-delay: 4s;
+}
+.lights img:nth-child(3)
+{
+    animation-delay: 7s;
+}
+.lights img:nth-child(4)
+{
+    animation-delay: 3s;
+}
+.lights img:nth-child(5)
+{
+    animation-delay: 2s;
+}
+.lights img:nth-child(6)
+{
+    animation-delay: 5s;
+}
+.lights img:nth-child(7)
+{
+    animation-delay: 1.5s;
+}
+.lights img:nth-child(8)
+{
+    animation-delay: 3.5s;
+}
+.lights img:nth-child(9)
+{
+    animation-delay: 2.5s;
+}
+.lights img:nth-child(10)
+{
+    animation-delay: 7.5s;
+}
+
+/*--- start of second page ---*/
+
+
+.second 
+{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 200px;
+    background-image: linear-gradient(rgba(10,5,10,0.5),rgba(10,5,10,0.5)),url(images/anime.jpg);
+    background-position:center;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+.container
+{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+}
+
+.col1
+{
+    flex: 1;
+}
+
+.col1 img
+{
+    width: 100%;
+}
+
+.box
+{
+
+    align-content: center;
+    margin: 40px;
+    background-image: linear-gradient(rgba(10,5,10,0.5),rgba(10,5,10,0.5)),url(images/animeCar.jpg);
+    box-shadow: 25px;
+    background-size:cover;
+    background-position: center;
+    overflow: hidden;
+    width: 60%;
+    left: 40px;
+    display: inline-block;
+    float: center;
+    position: relative;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.boxTxt
+{
+    border-radius: 10px;
+    padding: 20px 40px;
+    flex-basis: 70%;
+    font-weight: 300;
+    color: white;
+}
+
+.box:hover
+{
+    transform: scale(1.2);
+    border-style: outset;
+    border-color: beige;
+    box-shadow: 5px 5px 5px 0.2px;
+}
+
+
+/*---- start of third page ----*/
+
+
+.third
+{
+    width: 100%;
+    padding-top: 200px;
+    display:inline-block;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    background-image: linear-gradient(rgba(10,5,10,0.5),rgba(10,5,10,0.5)),url(images/anime.jpg);
+    background-position:center;
+    background-size: cover;
+    position: relative;
+    font-weight: 700;
+}
+
+.third button
+{
+    width: 200px;
+    height: 50px;
+    border: 0;
+    color: white;
+    outline: none;
+    background: grey;
+    font-size: 16px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.7);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transform: translate(100px, 0);
+}
+
+.third button:hover
+{
+    box-shadow: inset 0px 0px 10px 0px, inset -0px -0px 10px 0px;
+}
+.holder
+{
+   width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.soft
+{
+    width: 45%;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 400;
+    font-size: 24px;
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 10px rgba(255,255,255,0.6), 2px 2px 10px rgba(255,255,255,0.6),-2px -2px 10px rgba(255,255,255,0.6);
+    background-image: linear-gradient(rgba(10,5,10,0.5),rgba(10,5,10,0.5));
+}
+
+.hard
+{
+    width: 50%;
+    height: 110%;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 24px;
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 10px rgba(255,255,255,0.6), 2px 2px 10px rgba(255,255,255,0.6),-2px -2px 10px rgba(255,255,255,0.6);
+    background-image: linear-gradient(rgba(10,5,10,0.5),rgba(10,5,10,0.5));
+}
+
+.skill
+{
+    width: 70%;
+    padding: 0 20px;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(100px, 30px);
+    right: 0;
+}
+
+.hard .skill
+{
+    transform: translate(100px, -10px);
+}
+
+.language
+{
+   font-size: 20px;
+    font-weight: 300;
+    color: white;
+    margin: 20px 0;
+}
+
+.bar
+{
+   height: 15px;
+    background: #1b1b1b;
+    border: 3px;
+}
+
+.percent
+{
+    height: 15px;
+    background: #57feff;
+    position: relative;
+    animation: moving 3s;
+}
+
+.percent::before
+{
+    content: attr(value);
+    position: absolute;
+    padding: 2px 2px;
+    background: #57feff;
+    border-radius: 2px;
+    font-size: 14px;
+    top: -5px;
+    right: 0;
+    transform: translateX(50%);
+    color: #1b1b1b;
+    font-weight: 500;
+}
+
+
+
+@keyframes moving
+{
+    from
+    {
+        width: 0;
+    }
+    to
+    {
+        width: 100%;
+    }
+}
+
+/* ----- second half of second page ---*/
+
+.containHobbies
+{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+
+.hobbyText
+{
+    width: 25%;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-content: center;
+    color: white;
+    transform: translate(0, 50%);
+    right: 0;
+}
+
+.hobbies
+{
+    width: 75%;
+    height: 100%;
+    
+}
+
+.hobbyBox
+{
+    width: 60%;
+    height: 25%;
+    background: transparent;
+    margin: 40px;
+    background-image: linear-gradient(rgba(10,5,10,0.5),rgba(10,5,10,0.5));
+    background-size:cover;
+    background-position: center;
+    float: center;
+    position: relative;
+    cursor: pointer;
+    border-radius: 20px;
+    transform: translate(30%, 0);
+    box-shadow: 2px 2px 0.2px rgba(255, 255, 255, 0.7), -2px -2px 0.2px rgba(255, 255, 255, 0.7);
+    align-content: center;
+    justify-content: center;
+    display: block;
+}
+
+.hobbyBox video
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.hobbyBox:hover
+{
+    animation: shake 4s infinite;
+}
+
+.hobbyBox .boxTxt
+{
+    font-family: 'Anton', sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    background-blend-mode: screen;
+    position: absolute;
+    align-content: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@keyframes shake
+{
+    0%
+    {
+        transform: rotate(0deg) translateY(-10px);
+    }
+    10%
+    {
+        transform: rotate(-1deg) translateY(-10px);
+    }
+    20%
+    {
+        transform: rotate(1deg) translateY(-10px);
+    }
+    30%
+    {
+        transform: rotate(0deg) translateY(-10px);
+    }
+    40%
+    {
+        transform: rotate(-1deg) translateY(-10px);
+    }
+    50%
+    {
+        transform: rotate(1deg) translateY(-10px);
+    }
+    60%
+    {
+        transform: rotate(0deg) translateY(-10px);
+    }
+    70%
+    {
+        transform: rotate(-1deg) translateY(-10px);
+    }
+    80%
+    {
+        transform: rotate(1deg) translateY(-10px);
+    }
+    90%
+    {
+        transform: rotate(0deg) translateY(-10px);
+    }
+    100%
+    {
+        transform: rotate(-1deg) translateY(-10px);
+    }
+}
+
+/*-------- end of third page -------*/
+
+.fourth
+{
+    width: 100%;
+    padding-top: 200px;
+    display:inline-block;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    background-image: linear-gradient(rgba(10,5,10,0.5),rgba(10,5,10,0.5)),url(images/anime.jpg);
+    background-position:center;
+    background-size: cover;
+    position: relative;
+    font-weight: 700;
+}
+
+.contact
+{
+    width: 30%;
+    height: 50%;
+    transform: translate(10%, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cv
+{
+    width: 50%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.cv button
+{
+    width: 200px;
+    height: 50px;
+    border: 0;
+    color: white;
+    outline: none;
+    background: grey;
+    font-size: 16px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.7);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transform: translate(100px, 0);
+}
+
+.cv button:hover
+{
+    box-shadow: inset 0px 0px 10px 0px, inset -0px -0px 10px 0px;
+}
+
+.details
+{
+    width: 50%;
+    height: 70%;
+    background: #1b1b1b;
+    box-shadow: 0px 0px 10px 0px, -0px -0px 10px 0px;
+    padding: 0 20px;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50%);
+}
+
+
+.footer
+{
+    width: 100%;
+    height: 100px;
+    background: #1b1b1b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer img
+{
+    height: 50px;
+    width: 50px;
+}
+
+.footer img:hover
+{
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+.insta
+{
+
+}
+
+/*----- load page -----*/
+
+#loadPage
+{
+    background: #1b1b1b url(images/loader.gif) no-repeat center center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    background-size: 10%;
+}
