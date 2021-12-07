@@ -225,7 +225,7 @@ svg path
     box-shadow: 5px 5px 5px 0.2px;
 }
 
-@media screen and (orientation: portrait)
+@media screen and (max-width: 1080px)
 {
     .box
     {
